@@ -19,7 +19,7 @@
   <properties>
     <!-- We skip GWT tests by default. To run, pass -Dgwt.test.include=**/GwtTestSuite.java -->
     <gwt.test.include>**/DoesNotMatchAnyTests.java</gwt.test.include>
-    <gwt.version>2.8.2</gwt.version>
+    <gwt.version>2.10.0</gwt.version>
     <gwt.plugin.version>2.8.2</gwt.plugin.version>
     <gwt.logLevel>WARN</gwt.logLevel>
   </properties>
@@ -286,17 +286,17 @@
                 <!-- The following don't contain @GwtCompatible for dependency reasons. -->
                 <copy toDir="${project.build.directory}/guava-gwt-sources">
                   <fileset dir="${project.build.directory}/guava-sources">
-                    <include name="**/ListenableFuture.java" />
+                    <include name="**/ListenableFuture.java"/>
                   </fileset>
                 </copy>
                 <copy toDir="${project.build.directory}/guava-gwt-sources">
                   <fileset dir="${project.build.directory}/failureaccess-sources">
-                    <include name="**/InternalFutures.java" />
+                    <include name="**/InternalFutures.java"/>
                   </fileset>
                 </copy>
                 <copy toDir="${project.build.directory}/guava-gwt-sources">
                   <fileset dir="${project.build.directory}/failureaccess-sources">
-                    <include name="**/InternalFutureFailureAccess.java" />
+                    <include name="**/InternalFutureFailureAccess.java"/>
                   </fileset>
                 </copy>
                 <copy toDir="${project.build.directory}/guava-test-gwt-sources">
